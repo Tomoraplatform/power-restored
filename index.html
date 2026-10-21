@@ -8,6 +8,7 @@
 <meta property="og:title" content="Power Restored | Courtney Blake, NBC-HWC">
 <meta property="og:description" content="Reclaim your health. Restore your confidence. One sustainable habit at a time.">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#1f2420">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
@@ -24,6 +25,7 @@
       <span class="brand-sub">Lifestyle &amp; Wellness</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
+      <a href="#who">Who it's for</a>
       <a href="#method">The method</a>
       <a href="#work">Work with me</a>
       <a href="#about">About</a>
@@ -34,7 +36,9 @@
 
 <main id="main">
 
+  <!-- HERO -->
   <section class="hero">
+    <div class="grain" aria-hidden="true"></div>
     <div class="wrap hero-in">
       <div class="hero-copy">
         <p class="label">Lifestyle &amp; Wellness</p>
@@ -45,39 +49,58 @@
           <a class="btn" href="#start">Book a free consultation</a>
           <a class="btn btn-ghost" href="#method">See how it works</a>
         </div>
-        <p class="who">Courtney Blake, M.Ed., NBC-HWC, CPT
+        <p class="who-line">Courtney Blake, M.Ed., NBC-HWC, CPT
           <span>National Board Certified Health &amp; Wellness Coach and Certified Master Personal Trainer</span>
         </p>
       </div>
       <div class="hero-photo">
-        <img src="assets/courtney-portrait.webp" width="800" height="800" alt="Courtney Blake, health and wellness coach" fetchpriority="high">
+        <div class="hero-photo-frame">
+          <img src="assets/courtney-portrait.webp" width="800" height="800" alt="Courtney Blake, health and wellness coach" fetchpriority="high">
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="band">
-    <div class="wrap">
-      <p class="mission">Reclaim your health. Restore your confidence. <em>One sustainable habit at a time.</em></p>
+  <!-- CREDENTIAL STRIP -->
+  <div class="strip">
+    <div class="wrap strip-in">
+      <span>NBC-HWC</span>
+      <span aria-hidden="true">&#9670;</span>
+      <span>Certified Master Personal Trainer</span>
+      <span aria-hidden="true">&#9670;</span>
+      <span>M.Ed.</span>
+      <span aria-hidden="true">&#9670;</span>
+      <span>Adults 40+</span>
+      <span aria-hidden="true">&#9670;</span>
+      <span>Corporate wellness</span>
     </div>
-  </section>
+  </div>
 
+  <!-- WHO -->
   <section id="who">
     <div class="wrap">
-      <p class="label">Who this is for</p>
-      <h2>Adults 40 and over, starting again.</h2>
-      <p class="intro">Men and women in midlife who have taken a hit, whether a career change, a health scare or a personal setback, and want a structured way back to strength and energy.</p>
+      <div class="sec-head">
+        <div>
+          <p class="label">Who this is for</p>
+          <h2>Adults 40 and over,<br>starting again.</h2>
+        </div>
+        <p class="intro">Men and women in midlife who have taken a hit, whether a career change, a health scare or a personal setback, and want a structured way back to strength and energy.</p>
+      </div>
       <div class="cards">
         <div class="card">
+          <span class="card-num">01</span>
           <p class="label">Starting point</p>
           <h3>After a setback</h3>
           <p>Life did not go as planned. You want to rebuild, not stay stuck looking backward.</p>
         </div>
         <div class="card">
+          <span class="card-num">02</span>
           <p class="label">Wanting</p>
           <h3>Strength and energy</h3>
           <p>More strength, better health, a healthy weight and the energy to show up properly.</p>
         </div>
         <div class="card">
+          <span class="card-num">03</span>
           <p class="label">Needing</p>
           <h3>Structure</h3>
           <p>A plan, accountability and encouragement that keeps you consistent when motivation dips.</p>
@@ -86,11 +109,26 @@
     </div>
   </section>
 
+  <!-- FULL BLEED BAND -->
+  <section class="bleed" aria-label="Brand statement">
+    <img class="bleed-img" src="assets/band.jpg" width="1600" height="1022" alt="" loading="lazy" aria-hidden="true">
+    <div class="bleed-veil" aria-hidden="true"></div>
+    <div class="wrap bleed-in">
+      <p class="label label-light">The work</p>
+      <p class="mission">Reclaim your health.<br>Restore your confidence.<br><em>One sustainable habit at a time.</em></p>
+    </div>
+  </section>
+
+  <!-- METHOD -->
   <section id="method" class="alt">
     <div class="wrap">
-      <p class="label">The method</p>
-      <h2>Reflect. Reset. Rebuild. Restore.</h2>
-      <p class="intro">Four stages, in order. Nothing skipped, nothing rushed. It is the same sequence whether you are training for strength, changing how you eat, or rebuilding a routine that fell apart.</p>
+      <div class="sec-head">
+        <div>
+          <p class="label">The method</p>
+          <h2>Reflect. Reset.<br>Rebuild. Restore.</h2>
+        </div>
+        <p class="intro">Four stages, in order. Nothing skipped, nothing rushed. It is the same sequence whether you are training for strength, changing how you eat, or rebuilding a routine that fell apart.</p>
+      </div>
       <ol class="steps">
         <li>
           <h3>Reflect</h3>
@@ -112,13 +150,40 @@
     </div>
   </section>
 
-  <section id="work">
+  <!-- SPLIT: what it looks like -->
+  <section class="split">
+    <div class="wrap split-in">
+      <div class="split-photo">
+        <img src="assets/coaching.jpg" width="666" height="1000" alt="A coach guiding a client through a training session" loading="lazy">
+        <span class="split-tag">Accountability, not guesswork</span>
+      </div>
+      <div class="split-copy">
+        <p class="label">What it looks like</p>
+        <h2>Someone in your corner on the days it slips.</h2>
+        <p class="intro">Most people do not fail because the plan was wrong. They fail in the gap between sessions, when life gets loud and the plan quietly stops happening. That gap is the actual job.</p>
+        <ul class="list list-lg">
+          <li>A starting point matched to the body you have now</li>
+          <li>Clear targets for the week, not vague intentions</li>
+          <li>Check-ins that catch the slip early</li>
+          <li>Adjustments when work, travel or health change the picture</li>
+        </ul>
+        <a class="btn" href="#start">Book a free consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="alt">
     <div class="wrap">
-      <p class="label">Work with me</p>
-      <h2>Three ways in.</h2>
-      <p class="intro">Every one of them starts with the same free consultation, so we can work out which is right before you commit to anything.</p>
-      <div class="cards">
-        <div class="card card-service">
+      <div class="sec-head">
+        <div>
+          <p class="label">Work with me</p>
+          <h2>Three ways in.</h2>
+        </div>
+        <p class="intro">Every one of them starts with the same free consultation, so we can work out which is right before you commit to anything.</p>
+      </div>
+      <div class="services">
+        <article class="svc svc-feature">
           <h3>Health &amp; wellness coaching</h3>
           <p>One to one, board certified. We work on behaviour change and habit formation, the parts that decide whether any of this lasts.</p>
           <ul class="list">
@@ -126,8 +191,8 @@
             <li>Accountability between sessions</li>
             <li>Nutrition and lifestyle guidance</li>
           </ul>
-        </div>
-        <div class="card card-service">
+        </article>
+        <article class="svc">
           <h3>Personal training</h3>
           <p>Strength programming built around the body you have now, not the one you had at 25.</p>
           <ul class="list">
@@ -135,21 +200,25 @@
             <li>Programming for midlife bodies</li>
             <li>Form, progression and recovery</li>
           </ul>
-        </div>
-        <div class="card card-service">
-          <h3>Corporate wellness</h3>
-          <p>Programmes and workshops for teams that want healthier, more energised people showing up to work.</p>
-          <ul class="list">
-            <li>Workshops and group sessions</li>
-            <li>Workplace wellbeing programmes</li>
-            <li>Leadership and resilience</li>
-          </ul>
-        </div>
+        </article>
+        <article class="svc svc-photo">
+          <img src="assets/group.jpg" width="1100" height="733" alt="A mixed-age group session in a bright studio" loading="lazy">
+          <div class="svc-photo-body">
+            <h3>Corporate wellness</h3>
+            <p>Programmes and workshops for teams that want healthier, more energised people showing up to work.</p>
+            <ul class="list">
+              <li>Workshops and group sessions</li>
+              <li>Workplace wellbeing programmes</li>
+              <li>Leadership and resilience</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="about" class="alt">
+  <!-- ABOUT -->
+  <section id="about">
     <div class="wrap about-in">
       <div class="about-photo">
         <img src="assets/courtney-portrait.webp" width="800" height="800" alt="Portrait of Courtney Blake" loading="lazy">
@@ -177,10 +246,12 @@
     </div>
   </section>
 
+  <!-- START -->
   <section id="start" class="start">
+    <div class="grain" aria-hidden="true"></div>
     <div class="wrap">
       <p class="label">Start here</p>
-      <h2>One chapter does not decide the rest of your story.</h2>
+      <h2>One chapter does not decide<br>the rest of your story.</h2>
       <p class="intro">Book a free consultation. We will talk about where you are, what you want back, and whether this is the right fit. No pressure and no obligation to continue.</p>
       <div class="cta-row">
         <a class="btn btn-lg" href="mailto:hello@example.com?subject=Free%20consultation">Book a free consultation</a>
@@ -207,6 +278,39 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
+  // Reveal on scroll, as progressive enhancement only.
+  // Content is visible by default; it is only hidden once we know the observer
+  // is running, and a failsafe reveals everything if anything goes wrong.
+  (function(){
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!('IntersectionObserver' in window)) return;
+
+    var els = document.querySelectorAll('.card,.svc,.steps li,.cred,.split-photo,.split-copy,.sec-head');
+    if (!els.length) return;
+
+    var revealAll = function(){
+      els.forEach(function(el){ el.classList.add('in'); });
+    };
+
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {rootMargin:'200px 0px 0px 0px', threshold:0.01});
+
+    els.forEach(function(el){ el.classList.add('reveal'); io.observe(el); });
+
+    // Anything already at or above the fold shows straight away.
+    requestAnimationFrame(function(){
+      els.forEach(function(el){
+        if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in');
+      });
+    });
+
+    // Failsafe: never leave content hidden.
+    setTimeout(revealAll, 2500);
+    window.addEventListener('pagehide', revealAll);
+  })();
 </script>
 
 </body>
