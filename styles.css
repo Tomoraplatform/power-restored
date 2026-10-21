@@ -14,6 +14,13 @@
   --hero-bg:#f1efc4;
   --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
   --body:"Barlow","Helvetica Neue",Arial,sans-serif;
+
+  /* Always-dark brand surfaces (footer, credential strip).
+     These deliberately do NOT invert with the theme: they carry white text,
+     so flipping them with --fg would put white on a near-white panel. */
+  --ink-surface:#1f2420;
+  --ink-on:#f7f7f2;
+
   color-scheme:light;
 }
 
@@ -21,13 +28,15 @@
   :root:not([data-theme="light"]){
     --bg:#121512; --surface:#1b201b; --fg:#ecefe8; --muted:#a5ada4;
     --lime:#9bd24a; --green:#9bd24a; --pale:#242a1a;
-    --line:#2c342b; --hero-bg:#1b2214; color-scheme:dark;
+    --line:#2c342b; --hero-bg:#1b2214;
+    --ink-surface:#0e110e; --ink-on:#f2f4ee; color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --bg:#121512; --surface:#1b201b; --fg:#ecefe8; --muted:#a5ada4;
   --lime:#9bd24a; --green:#9bd24a; --pale:#242a1a;
-  --line:#2c342b; --hero-bg:#1b2214; color-scheme:dark;
+  --line:#2c342b; --hero-bg:#1b2214;
+  --ink-surface:#0e110e; --ink-on:#f2f4ee; color-scheme:dark;
 }
 
 *{box-sizing:border-box}
@@ -136,7 +145,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offs
 .hero-photo img{border-radius:12px;box-shadow:0 22px 60px rgba(31,36,32,.22);width:100%}
 
 /* credential strip */
-.strip{background:var(--fg);color:var(--bg);overflow:hidden}
+.strip{background:var(--ink-surface);color:var(--ink-on);overflow:hidden}
 .strip-in{
   display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;
   padding-block:16px;
@@ -250,13 +259,13 @@ section.alt .svc{background:var(--bg)}
 .fineprint{margin-top:24px;font-size:.95rem;color:var(--muted)}
 
 /* footer */
-footer{background:var(--fg);color:var(--bg);padding-block:56px 36px}
+footer{background:var(--ink-surface);color:var(--ink-on);padding-block:56px 36px}
 .footer-in{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:start}
 .footer-in>*{min-width:0}
 .footer-name{font-size:1.6rem}
-footer .brand-sub{color:rgba(255,255,255,.6)}
-.disclaimer{font-size:.9rem;color:rgba(255,255,255,.66);max-width:68ch;line-height:1.55}
-.copyright{margin-top:36px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);font-size:.85rem;color:rgba(255,255,255,.55)}
+footer .brand-sub{color:color-mix(in srgb,var(--ink-on) 62%,transparent)}
+.disclaimer{font-size:.9rem;color:color-mix(in srgb,var(--ink-on) 72%,transparent);max-width:68ch;line-height:1.55}
+.copyright{margin-top:36px;padding-top:22px;border-top:1px solid color-mix(in srgb,var(--ink-on) 20%,transparent);font-size:.85rem;color:color-mix(in srgb,var(--ink-on) 62%,transparent)}
 
 /* reveal */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
